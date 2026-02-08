@@ -2,65 +2,225 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>ITBI e Cartório</title>
+<title>ITBI Fácil | Emissão de ITBI e Cartório</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Emissão de ITBI e despacho de cartório com rapidez, segurança e acompanhamento especializado.">
+
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #eef2f7;
+:root {
+  --azul: #1e3a8a;
+  --azul-claro: #2563eb;
+  --verde: #22c55e;
+  --cinza: #f1f5f9;
 }
-header {
-  background: linear-gradient(135deg,#1e3a8a,#2563eb);
-  color: white;
-  padding: 80px 20px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--cinza);
+  color: #1f2937;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--azul), var(--azul-claro));
+  color: #fff;
+  padding: 90px 20px;
   text-align: center;
 }
-section {
-  max-width: 1000px;
-  margin: 40px auto;
-  background: white;
-  padding: 40px;
-  border-radius: 10px;
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
 }
+
+.hero p {
+  font-size: 20px;
+  max-width: 720px;
+  margin: auto;
+}
+
+.hero .cta {
+  display: inline-block;
+  margin-top: 35px;
+  background: var(--verde);
+  color: #fff;
+  padding: 18px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* STEPS */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.step {
+  background: #fff;
+  padding: 35px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.step span {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--azul);
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.service {
+  background: #fff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+/* FORM */
+.form-box {
+  background: #fff;
+  padding: 45px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  background: var(--azul);
+  color: #fff;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* WHATSAPP */
 .whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background: #25d366;
   color: white;
+  font-size: 26px;
   padding: 16px;
   border-radius: 50%;
   text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 </style>
 </head>
+
 <body>
 
-<header>
-  <h1>ITBI e Cartório sem burocracia</h1>
-  <p>Emitimos ITBI e cuidamos do cartório por você.</p>
-</header>
-
-<section>
-  <h2>Serviços</h2>
-  <ul>
-    <li>Emissão de ITBI</li>
-    <li>Despacho cartorial</li>
-    <li>Acompanhamento completo</li>
-  </ul>
+<section class="hero">
+  <h1>ITBI Fácil</h1>
+  <p>Emitimos sua guia de ITBI e cuidamos do cartório com rapidez, segurança e acompanhamento completo.</p>
+  <a href="#form" class="cta">Iniciar atendimento</a>
 </section>
 
-<section>
-  <h2>Contato</h2>
-  <form action="https://formsubmit.co/SEUEMAIL@EMAIL.COM" method="POST">
-    <input type="text" name="nome" placeholder="Nome" required><br><br>
-    <input type="email" name="email" placeholder="Email" required><br><br>
-    <button>Enviar</button>
-  </form>
+<section class="container">
+  <div class="steps">
+    <div class="step">
+      <span>1</span>
+      <p>Você envia os dados do imóvel</p>
+    </div>
+    <div class="step">
+      <span>2</span>
+      <p>Cuidamos da emissão do ITBI</p>
+    </div>
+    <div class="step">
+      <span>3</span>
+      <p>Despacho e acompanhamento cartorial</p>
+    </div>
+  </div>
 </section>
 
-<a href="https://wa.me/5511999999999" class="whatsapp">💬</a>
+<section class="container">
+  <div class="services">
+    <div class="service">
+      <h3>Emissão de ITBI</h3>
+      <p>Cálculo, geração da guia e orientações completas.</p>
+    </div>
+    <div class="service">
+      <h3>Despacho de Cartório</h3>
+      <p>Protocolos, registros e acompanhamento até finalizar.</p>
+    </div>
+    <div class="service">
+      <h3>Acompanhamento</h3>
+      <p>Você recebe atualizações e suporte durante todo o processo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="form">
+  <div class="form-box">
+    <h2>Solicite atendimento</h2>
+    <form action="https://formsubmit.co/SEUEMAIL@EMAIL.COM" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="nome" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="text" name="telefone" placeholder="WhatsApp" required>
+
+      <select name="servico" required>
+        <option value="">Serviço desejado</option>
+        <option>ITBI</option>
+        <option>Despacho de Cartório</option>
+        <option>ITBI + Cartório</option>
+      </select>
+
+      <textarea name="mensagem" placeholder="Descreva seu caso"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<a href="https://wa.me/5511999999999" class="whatsapp" target="_blank">💬</a>
 
 </body>
 </html>
